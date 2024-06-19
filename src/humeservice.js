@@ -1,7 +1,7 @@
 // src/humeService.js
-import { createHumeClient } from '@humeai/voice';
+import { HumeClient } from '@humeai/voice';
 
-const client = createHumeClient({
+const client = new HumeClient({
   apiKey: import.meta.env.VITE_HUME_API_KEY
 });
 
